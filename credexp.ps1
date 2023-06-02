@@ -119,6 +119,9 @@ foreach ($line in $temp) {
 }
 
 #Stored in Browsers
+if (!(test-path c:\Temp)) {
+    New-Item -path c:\Temp -ItemType Directory
+}
 cd C:\Temp
 
 Function Get-ChromeEdge($file,$browser) {
